@@ -1,0 +1,17 @@
+# Wind47 Keymap
+
+keymap {
+    compatible = "zmk,keymap";
+
+    layout_4x13_3x11 {
+        bindings =
+            /* Row 1 (13 keys) */
+            <&kp ESC>, <&kp 1>, <&kp 2>, <&kp 3>, <&kp 4>, <&kp 5>, <&kp 6>, <&kp 7>, <&kp 8>, <&kp 9>, <&kp 0>, <&kp MINUS>, <&kp EQUAL>, <&kp BACKSPACE>, <&kp GRAVE>,
+            /* Row 2 (11 keys) */
+            <&kp TAB>, <&kp Q>, <&kp W>, <&kp E>, <&kp R>, <&kp T>, <&kp Y>, <&kp U>, <&kp I>, <&kp O>, <&kp P>,
+            /* Row 3 (11 keys) */
+            <&kp CAPS>, <&kp A>, <&kp S>, <&kp D>, <&kp F>, <&kp G>, <&kp H>, <&kp J>, <&kp K>, <&kp L>, <&kp SEMI>,
+            /* Row 4 (11 keys) */
+            <&kp LSHIFT>, <&kp Z>, <&kp X>, <&kp C>, <&kp V>, <&kp B>, <&kp N>, <&kp M>, <&kp COMMA>, <&kp DOT>, <&kp SLASH>;
+    };
+}
