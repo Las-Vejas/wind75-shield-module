@@ -2,12 +2,18 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layout_4x13_3x11 {
+        layout_5row {
             bindings =
-                <&kp ESC>, <&kp 1>, <&kp 2>, <&kp 3>, <&kp 4>, <&kp 5>, <&kp 6>, <&kp 7>, <&kp 8>, <&kp 9>, <&kp 0>, <&kp MINUS>, <&kp EQUAL>, <&kp BACKSPACE>, <&kp GRAVE>,
-                <&kp TAB>, <&kp Q>, <&kp W>, <&kp E>, <&kp R>, <&kp T>, <&kp Y>, <&kp U>, <&kp I>, <&kp O>, <&kp P>,
-                <&kp CAPS>, <&kp A>, <&kp S>, <&kp D>, <&kp F>, <&kp G>, <&kp H>, <&kp J>, <&kp K>, <&kp L>, <&kp SEMI>,
-                <&kp LSHIFT>, <&kp Z>, <&kp X>, <&kp C>, <&kp V>, <&kp B>, <&kp N>, <&kp M>, <&kp COMMA>, <&kp DOT>, <&kp SLASH>;
+                /* Row 1 */
+                <&kp GRAVE>, <&kp 1>, <&kp 2>, <&kp 3>, <&kp 4>, <&kp 5>, <&kp 6>, <&kp 7>, <&kp 8>, <&kp 9>, <&kp 0>, <&kp MINUS>, <&kp EQUAL>, <&none>, <&kp BACKSPACE>, <&none>, <&none>,
+                /* Row 2 */
+                <&none>, <&kp TAB>, <&kp Q>, <&kp W>, <&kp E>, <&kp R>, <&kp T>, <&kp Y>, <&kp U>, <&kp I>, <&kp O>, <&kp P>, <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>, <&none>, <&kp BACKSLASH>, <&none>, <&none>,
+                /* Row 3 */
+                <&none>, <&kp CAPS>, <&kp A>, <&kp S>, <&kp D>, <&kp F>, <&kp G>, <&kp H>, <&kp J>, <&kp K>, <&kp L>, <&kp SEMI>, <&kp SQT>, <&none>, <&kp ENTER>, <&none>, <&none>,
+                /* Row 4 */
+                <&none>, <&kp LSHIFT>, <&kp Z>, <&kp X>, <&kp C>, <&kp V>, <&kp B>, <&kp N>, <&kp M>, <&kp COMMA>, <&kp DOT>, <&kp SLASH>, <&none>, <&kp RSHIFT>, <&none>, <&kp UP>, <&none>,
+                /* Row 5 */
+                <&none>, <&kp LCTRL>, <&none>, <&kp LGUI>, <&none>, <&kp LALT>, <&none>, <&none>, <&none>, <&none>, <&none>, <&none>, <&none>, <&kp RALT>, <&kp RGUI>, <&none>, <&none>, <&kp LEFT>, <&kp DOWN>, <&kp RIGHT>;
         };
     };
 }
